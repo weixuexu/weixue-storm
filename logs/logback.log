@@ -1,0 +1,392 @@
+word分词的自定义配置文件：/Users/dasouche/weixue/weixue-storm/weixue-storm-qa/target/classes/jar/dic/word_v_1_3/word.local.conf
+开始加载配置文件
+加载配置文件：word.conf
+未找到配置文件：word.local.conf
+配置文件加载完毕，耗时5 毫秒，配置项数目：33
+配置信息：
+1、auto.detect=true
+2、bigram.double.array.trie.size=5300000
+3、bigram.path=classpath:bigram.txt
+4、dic.class=org.apdplat.word.dictionary.impl.DoubleArrayDictionaryTrie
+5、dic.dump.path=
+6、dic.path=classpath:dic.txt
+7、dictionary.trie.index.size=24000
+8、double.array.dictionary.trie.size=2600000
+9、intercept.length=16
+10、keep.punctuation=false
+11、keep.whitespace=false
+12、ngram=bigram
+13、parallel.seg=true
+14、part.of.speech.des.path=classpath:part_of_speech_des.txt
+15、part.of.speech.dic.path=classpath:part_of_speech_dic.txt
+16、person.name.recognize=true
+17、punctuation.path=classpath:punctuation.txt
+18、quantifier.path=classpath:quantifier.txt
+19、recognition.tool.enabled=true
+20、redis.host=localhost
+21、redis.port=6379
+22、stopwords.path=classpath:stopwords.txt
+23、surname.path=classpath:surname.txt
+24、tagging.antonym=false
+25、tagging.pinyin.acronym=false
+26、tagging.pinyin.full=false
+27、tagging.synonym=false
+28、trigram.double.array.trie.size=9800000
+29、trigram.path=classpath:trigram.txt
+30、word.antonym.path=classpath:word_antonym.txt
+31、word.refine.combine.max.length=3
+32、word.refine.path=classpath:word_refine.txt
+33、word.synonym.path=classpath:word_synonym.txt
+使用配置文件 /Users/dasouche/weixue/weixue-storm/weixue-storm-qa/target/classes/jar/dic/word_v_1_3/word.local.conf 强制覆盖默认配置
+1、dic.path=classpath:jar/dic/word_v_1_3/dic.txt
+2、bigram.path=classpath:jar/dic/word_v_1_3/bigram.txt
+3、surname.path=classpath:jar/dic/word_v_1_3/surname.txt
+4、redis.port=6379
+5、dic.class=org.apdplat.word.dictionary.impl.DictionaryTrie
+6、trigram.double.array.trie.size=9800000
+7、word.refine.combine.max.length=3
+8、word.synonym.path=classpath:word_synonym.txt
+9、thread.pool.size=4
+10、tagging.pinyin.acronym=false
+11、stopwords.path=classpath:jar/dic/word_v_1_3/stopwords.txt
+12、keep.punctuation=false
+13、dic.dump.path=
+14、part.of.speech.des.path=classpath:jar/dic/word_v_1_3/part_of_speech_des.txt
+15、double.array.dictionary.trie.size=2600000
+16、recognition.tool.enabled=true
+17、word.refine.path=classpath:word_refine.txt
+18、auto.detect=false
+19、tagging.synonym=false
+20、tagging.antonym=false
+21、parallel.seg=true
+22、intercept.length=16
+23、tagging.pinyin.full=false
+24、trigram.path=classpath:jar/dic/word_v_1_3/trigram.txt
+25、dictionary.trie.index.size=24000
+26、word.antonym.path=classpath:word_antonym.txt
+27、quantifier.path=classpath:jar/dic/word_v_1_3/quantifier.txt
+28、punctuation.path=classpath:jar/dic/word_v_1_3/punctuation.txt
+29、redis.host=localhost
+30、bigram.double.array.trie.size=5300000
+31、person.name.recognize=false
+32、ngram=bigram
+33、part.of.speech.dic.path=classpath:jar/dic/word_v_1_3/part_of_speech_dic.txt,classpath:jar/dic/word_v_1_3/part_of_speech_dic_custom_noun_refinement.txt
+34、keep.whitespace=false
+构造分词实现类：org.apdplat.word.segmentation.impl.MaxNgramScore
+dic.class=org.apdplat.word.dictionary.impl.DictionaryTrie
+初始化词典：org.apdplat.word.dictionary.impl.DictionaryTrie
+开始加载资源
+classpath:jar/dic/word_v_1_3/dic.txt,classpath:jar/dic/word_v_1_3/punctuation.txt,classpath:jar/dic/word_v_1_3/part_of_speech_dic.txt,classpath:jar/dic/word_v_1_3/part_of_speech_dic_custom_noun_refinement.txt,classpath:word_synonym.txt,classpath:word_antonym.txt
+类路径资源：jar/dic/word_v_1_3/dic.txt
+类路径资源URL：file:/Users/dasouche/weixue/weixue-storm/weixue-storm-qa/target/classes/jar/dic/word_v_1_3/dic.txt
+加载资源：/Users/dasouche/weixue/weixue-storm/weixue-storm-qa/target/classes/jar/dic/word_v_1_3/dic.txt
+监控文件：/Users/dasouche/weixue/weixue-storm/weixue-storm-qa/target/classes/jar/dic/word_v_1_3/dic.txt
+注意：未启用自动检测功能！如需启用，请在word.local.conf文件中指定配置项auto.detect=true
+类路径资源：jar/dic/word_v_1_3/punctuation.txt
+类路径资源URL：file:/Users/dasouche/weixue/weixue-storm/weixue-storm-qa/target/classes/jar/dic/word_v_1_3/punctuation.txt
+加载资源：/Users/dasouche/weixue/weixue-storm/weixue-storm-qa/target/classes/jar/dic/word_v_1_3/punctuation.txt
+监控文件：/Users/dasouche/weixue/weixue-storm/weixue-storm-qa/target/classes/jar/dic/word_v_1_3/punctuation.txt
+注意：未启用自动检测功能！如需启用，请在word.local.conf文件中指定配置项auto.detect=true
+类路径资源：jar/dic/word_v_1_3/part_of_speech_dic.txt
+类路径资源URL：file:/Users/dasouche/weixue/weixue-storm/weixue-storm-qa/target/classes/jar/dic/word_v_1_3/part_of_speech_dic.txt
+加载资源：/Users/dasouche/weixue/weixue-storm/weixue-storm-qa/target/classes/jar/dic/word_v_1_3/part_of_speech_dic.txt
+监控文件：/Users/dasouche/weixue/weixue-storm/weixue-storm-qa/target/classes/jar/dic/word_v_1_3/part_of_speech_dic.txt
+注意：未启用自动检测功能！如需启用，请在word.local.conf文件中指定配置项auto.detect=true
+类路径资源：jar/dic/word_v_1_3/part_of_speech_dic_custom_noun_refinement.txt
+类路径资源URL：file:/Users/dasouche/weixue/weixue-storm/weixue-storm-qa/target/classes/jar/dic/word_v_1_3/part_of_speech_dic_custom_noun_refinement.txt
+加载资源：/Users/dasouche/weixue/weixue-storm/weixue-storm-qa/target/classes/jar/dic/word_v_1_3/part_of_speech_dic_custom_noun_refinement.txt
+监控文件：/Users/dasouche/weixue/weixue-storm/weixue-storm-qa/target/classes/jar/dic/word_v_1_3/part_of_speech_dic_custom_noun_refinement.txt
+注意：未启用自动检测功能！如需启用，请在word.local.conf文件中指定配置项auto.detect=true
+类路径资源：word_synonym.txt
+类路径资源URL：jar:file:/Users/dasouche/.m2/repository/org/apdplat/word/1.3/word-1.3.jar!/word_synonym.txt
+加载资源：classpath:word_synonym.txt
+类路径资源：word_antonym.txt
+类路径资源URL：jar:file:/Users/dasouche/.m2/repository/org/apdplat/word/1.3/word-1.3.jar!/word_antonym.txt
+加载资源：classpath:word_antonym.txt
+加载资源 1093845 行
+初始化词典
+开始加载资源
+classpath:jar/dic/word_v_1_3/surname.txt
+类路径资源：jar/dic/word_v_1_3/surname.txt
+类路径资源URL：file:/Users/dasouche/weixue/weixue-storm/weixue-storm-qa/target/classes/jar/dic/word_v_1_3/surname.txt
+加载资源：/Users/dasouche/weixue/weixue-storm/weixue-storm-qa/target/classes/jar/dic/word_v_1_3/surname.txt
+监控文件：/Users/dasouche/weixue/weixue-storm/weixue-storm-qa/target/classes/jar/dic/word_v_1_3/surname.txt
+注意：未启用自动检测功能！如需启用，请在word.local.conf文件中指定配置项auto.detect=true
+加载资源 506 行
+初始化百家姓
+百家姓初始化完毕，单姓个数：446，复姓个数：60
+完成加载资源，耗时5 毫秒
+将 60 个复姓加入词典
+词数目：678163，词典最大词长：16
+词长  1 的词数为：47
+词长  2 的词数为：213371
+词长  3 的词数为：289845
+词长  4 的词数为：159058
+词长  5 的词数为：6198
+词长  6 的词数为：3771
+词长  7 的词数为：2208
+词长  8 的词数为：1323
+词长  9 的词数为：797
+词长 10 的词数为：633
+词长 11 的词数为：312
+词长 12 的词数为：283
+词长 13 的词数为：124
+词长 14 的词数为：117
+词长 15 的词数为：51
+词长 16 的词数为：25
+词典平均词长：3.0036407
+冲突次数为：1 的元素个数：15
+冲突次数：15
+总槽数：24000
+用槽数：6986
+使用率：29.108334%
+剩槽数：17014
+词典初始化完毕，耗时：3871 毫秒
+完成加载资源，耗时5030 毫秒
+开始加载资源
+classpath:jar/dic/word_v_1_3/punctuation.txt
+类路径资源：jar/dic/word_v_1_3/punctuation.txt
+类路径资源URL：file:/Users/dasouche/weixue/weixue-storm/weixue-storm-qa/target/classes/jar/dic/word_v_1_3/punctuation.txt
+加载资源：/Users/dasouche/weixue/weixue-storm/weixue-storm-qa/target/classes/jar/dic/word_v_1_3/punctuation.txt
+加载资源 48 行
+初始化标点符号
+标点符号初始化完毕，标点符号个数：52
+完成加载资源，耗时11 毫秒
+开始加载资源
+classpath:jar/dic/word_v_1_3/quantifier.txt
+类路径资源：jar/dic/word_v_1_3/quantifier.txt
+类路径资源URL：file:/Users/dasouche/weixue/weixue-storm/weixue-storm-qa/target/classes/jar/dic/word_v_1_3/quantifier.txt
+加载资源：/Users/dasouche/weixue/weixue-storm/weixue-storm-qa/target/classes/jar/dic/word_v_1_3/quantifier.txt
+监控文件：/Users/dasouche/weixue/weixue-storm/weixue-storm-qa/target/classes/jar/dic/word_v_1_3/quantifier.txt
+注意：未启用自动检测功能！如需启用，请在word.local.conf文件中指定配置项auto.detect=true
+加载资源 164 行
+初始化数量词
+数量词初始化完毕，数量词个数：164
+完成加载资源，耗时4 毫秒
+开始加载资源
+classpath:jar/dic/word_v_1_3/bigram.txt
+类路径资源：jar/dic/word_v_1_3/bigram.txt
+加载资源 0 行
+初始化bigram
+bigram初始化完毕，bigram数据条数：0
+完成加载资源，耗时2 毫秒
+开始加载资源
+classpath:jar/dic/word_v_1_3/part_of_speech_dic.txt,classpath:jar/dic/word_v_1_3/part_of_speech_dic_custom_noun_refinement.txt
+类路径资源：jar/dic/word_v_1_3/part_of_speech_dic.txt
+类路径资源URL：file:/Users/dasouche/weixue/weixue-storm/weixue-storm-qa/target/classes/jar/dic/word_v_1_3/part_of_speech_dic.txt
+加载资源：/Users/dasouche/weixue/weixue-storm/weixue-storm-qa/target/classes/jar/dic/word_v_1_3/part_of_speech_dic.txt
+类路径资源：jar/dic/word_v_1_3/part_of_speech_dic_custom_noun_refinement.txt
+类路径资源URL：file:/Users/dasouche/weixue/weixue-storm/weixue-storm-qa/target/classes/jar/dic/word_v_1_3/part_of_speech_dic_custom_noun_refinement.txt
+加载资源：/Users/dasouche/weixue/weixue-storm/weixue-storm-qa/target/classes/jar/dic/word_v_1_3/part_of_speech_dic_custom_noun_refinement.txt
+加载资源 429980 行
+初始化词性标注器
+错误的词性数据：::
+词性标注器初始化完毕，词性数据条数：429979
+完成加载资源，耗时536 毫秒
+开始加载资源
+classpath:jar/dic/word_v_1_3/part_of_speech_des.txt
+类路径资源：jar/dic/word_v_1_3/part_of_speech_des.txt
+类路径资源URL：file:/Users/dasouche/weixue/weixue-storm/weixue-storm-qa/target/classes/jar/dic/word_v_1_3/part_of_speech_des.txt
+加载资源：/Users/dasouche/weixue/weixue-storm/weixue-storm-qa/target/classes/jar/dic/word_v_1_3/part_of_speech_des.txt
+监控文件：/Users/dasouche/weixue/weixue-storm/weixue-storm-qa/target/classes/jar/dic/word_v_1_3/part_of_speech_des.txt
+注意：未启用自动检测功能！如需启用，请在word.local.conf文件中指定配置项auto.detect=true
+加载资源 38 行
+初始化自定义词性说明
+自定义词性说明初始化完毕，数据条数：38
+完成加载资源，耗时1 毫秒
+word分词的自定义配置文件：/Users/dasouche/weixue/weixue-storm/weixue-storm-qa/target/classes/jar/dic/word_v_1_3/word.local.conf
+开始加载配置文件
+加载配置文件：word.conf
+未找到配置文件：word.local.conf
+配置文件加载完毕，耗时4 毫秒，配置项数目：33
+配置信息：
+1、auto.detect=true
+2、bigram.double.array.trie.size=5300000
+3、bigram.path=classpath:bigram.txt
+4、dic.class=org.apdplat.word.dictionary.impl.DoubleArrayDictionaryTrie
+5、dic.dump.path=
+6、dic.path=classpath:dic.txt
+7、dictionary.trie.index.size=24000
+8、double.array.dictionary.trie.size=2600000
+9、intercept.length=16
+10、keep.punctuation=false
+11、keep.whitespace=false
+12、ngram=bigram
+13、parallel.seg=true
+14、part.of.speech.des.path=classpath:part_of_speech_des.txt
+15、part.of.speech.dic.path=classpath:part_of_speech_dic.txt
+16、person.name.recognize=true
+17、punctuation.path=classpath:punctuation.txt
+18、quantifier.path=classpath:quantifier.txt
+19、recognition.tool.enabled=true
+20、redis.host=localhost
+21、redis.port=6379
+22、stopwords.path=classpath:stopwords.txt
+23、surname.path=classpath:surname.txt
+24、tagging.antonym=false
+25、tagging.pinyin.acronym=false
+26、tagging.pinyin.full=false
+27、tagging.synonym=false
+28、trigram.double.array.trie.size=9800000
+29、trigram.path=classpath:trigram.txt
+30、word.antonym.path=classpath:word_antonym.txt
+31、word.refine.combine.max.length=3
+32、word.refine.path=classpath:word_refine.txt
+33、word.synonym.path=classpath:word_synonym.txt
+使用配置文件 /Users/dasouche/weixue/weixue-storm/weixue-storm-qa/target/classes/jar/dic/word_v_1_3/word.local.conf 强制覆盖默认配置
+1、dic.path=classpath:jar/dic/word_v_1_3/dic.txt
+2、bigram.path=classpath:jar/dic/word_v_1_3/bigram.txt
+3、surname.path=classpath:jar/dic/word_v_1_3/surname.txt
+4、redis.port=6379
+5、dic.class=org.apdplat.word.dictionary.impl.DictionaryTrie
+6、trigram.double.array.trie.size=9800000
+7、word.refine.combine.max.length=3
+8、word.synonym.path=classpath:word_synonym.txt
+9、thread.pool.size=4
+10、tagging.pinyin.acronym=false
+11、stopwords.path=classpath:jar/dic/word_v_1_3/stopwords.txt
+12、keep.punctuation=false
+13、dic.dump.path=
+14、part.of.speech.des.path=classpath:jar/dic/word_v_1_3/part_of_speech_des.txt
+15、double.array.dictionary.trie.size=2600000
+16、recognition.tool.enabled=true
+17、word.refine.path=classpath:word_refine.txt
+18、auto.detect=false
+19、tagging.synonym=false
+20、tagging.antonym=false
+21、parallel.seg=true
+22、intercept.length=16
+23、tagging.pinyin.full=false
+24、trigram.path=classpath:jar/dic/word_v_1_3/trigram.txt
+25、dictionary.trie.index.size=24000
+26、word.antonym.path=classpath:word_antonym.txt
+27、quantifier.path=classpath:jar/dic/word_v_1_3/quantifier.txt
+28、punctuation.path=classpath:jar/dic/word_v_1_3/punctuation.txt
+29、redis.host=localhost
+30、bigram.double.array.trie.size=5300000
+31、person.name.recognize=false
+32、ngram=bigram
+33、part.of.speech.dic.path=classpath:jar/dic/word_v_1_3/part_of_speech_dic.txt,classpath:jar/dic/word_v_1_3/part_of_speech_dic_custom_noun_refinement.txt
+34、keep.whitespace=false
+构造分词实现类：org.apdplat.word.segmentation.impl.MaxNgramScore
+dic.class=org.apdplat.word.dictionary.impl.DictionaryTrie
+初始化词典：org.apdplat.word.dictionary.impl.DictionaryTrie
+开始加载资源
+classpath:jar/dic/word_v_1_3/dic.txt,classpath:jar/dic/word_v_1_3/punctuation.txt,classpath:jar/dic/word_v_1_3/part_of_speech_dic.txt,classpath:jar/dic/word_v_1_3/part_of_speech_dic_custom_noun_refinement.txt,classpath:word_synonym.txt,classpath:word_antonym.txt
+类路径资源：jar/dic/word_v_1_3/dic.txt
+类路径资源URL：file:/Users/dasouche/weixue/weixue-storm/weixue-storm-qa/target/classes/jar/dic/word_v_1_3/dic.txt
+加载资源：/Users/dasouche/weixue/weixue-storm/weixue-storm-qa/target/classes/jar/dic/word_v_1_3/dic.txt
+监控文件：/Users/dasouche/weixue/weixue-storm/weixue-storm-qa/target/classes/jar/dic/word_v_1_3/dic.txt
+注意：未启用自动检测功能！如需启用，请在word.local.conf文件中指定配置项auto.detect=true
+类路径资源：jar/dic/word_v_1_3/punctuation.txt
+类路径资源URL：file:/Users/dasouche/weixue/weixue-storm/weixue-storm-qa/target/classes/jar/dic/word_v_1_3/punctuation.txt
+加载资源：/Users/dasouche/weixue/weixue-storm/weixue-storm-qa/target/classes/jar/dic/word_v_1_3/punctuation.txt
+监控文件：/Users/dasouche/weixue/weixue-storm/weixue-storm-qa/target/classes/jar/dic/word_v_1_3/punctuation.txt
+注意：未启用自动检测功能！如需启用，请在word.local.conf文件中指定配置项auto.detect=true
+类路径资源：jar/dic/word_v_1_3/part_of_speech_dic.txt
+类路径资源URL：file:/Users/dasouche/weixue/weixue-storm/weixue-storm-qa/target/classes/jar/dic/word_v_1_3/part_of_speech_dic.txt
+加载资源：/Users/dasouche/weixue/weixue-storm/weixue-storm-qa/target/classes/jar/dic/word_v_1_3/part_of_speech_dic.txt
+监控文件：/Users/dasouche/weixue/weixue-storm/weixue-storm-qa/target/classes/jar/dic/word_v_1_3/part_of_speech_dic.txt
+注意：未启用自动检测功能！如需启用，请在word.local.conf文件中指定配置项auto.detect=true
+类路径资源：jar/dic/word_v_1_3/part_of_speech_dic_custom_noun_refinement.txt
+类路径资源URL：file:/Users/dasouche/weixue/weixue-storm/weixue-storm-qa/target/classes/jar/dic/word_v_1_3/part_of_speech_dic_custom_noun_refinement.txt
+加载资源：/Users/dasouche/weixue/weixue-storm/weixue-storm-qa/target/classes/jar/dic/word_v_1_3/part_of_speech_dic_custom_noun_refinement.txt
+监控文件：/Users/dasouche/weixue/weixue-storm/weixue-storm-qa/target/classes/jar/dic/word_v_1_3/part_of_speech_dic_custom_noun_refinement.txt
+注意：未启用自动检测功能！如需启用，请在word.local.conf文件中指定配置项auto.detect=true
+类路径资源：word_synonym.txt
+类路径资源URL：jar:file:/Users/dasouche/.m2/repository/org/apdplat/word/1.3/word-1.3.jar!/word_synonym.txt
+加载资源：classpath:word_synonym.txt
+类路径资源：word_antonym.txt
+类路径资源URL：jar:file:/Users/dasouche/.m2/repository/org/apdplat/word/1.3/word-1.3.jar!/word_antonym.txt
+加载资源：classpath:word_antonym.txt
+加载资源 1093845 行
+初始化词典
+开始加载资源
+classpath:jar/dic/word_v_1_3/surname.txt
+类路径资源：jar/dic/word_v_1_3/surname.txt
+类路径资源URL：file:/Users/dasouche/weixue/weixue-storm/weixue-storm-qa/target/classes/jar/dic/word_v_1_3/surname.txt
+加载资源：/Users/dasouche/weixue/weixue-storm/weixue-storm-qa/target/classes/jar/dic/word_v_1_3/surname.txt
+监控文件：/Users/dasouche/weixue/weixue-storm/weixue-storm-qa/target/classes/jar/dic/word_v_1_3/surname.txt
+注意：未启用自动检测功能！如需启用，请在word.local.conf文件中指定配置项auto.detect=true
+加载资源 506 行
+初始化百家姓
+百家姓初始化完毕，单姓个数：446，复姓个数：60
+完成加载资源，耗时2 毫秒
+将 60 个复姓加入词典
+词数目：678163，词典最大词长：16
+词长  1 的词数为：47
+词长  2 的词数为：213371
+词长  3 的词数为：289845
+词长  4 的词数为：159058
+词长  5 的词数为：6198
+词长  6 的词数为：3771
+词长  7 的词数为：2208
+词长  8 的词数为：1323
+词长  9 的词数为：797
+词长 10 的词数为：633
+词长 11 的词数为：312
+词长 12 的词数为：283
+词长 13 的词数为：124
+词长 14 的词数为：117
+词长 15 的词数为：51
+词长 16 的词数为：25
+词典平均词长：3.0036407
+冲突次数为：1 的元素个数：15
+冲突次数：15
+总槽数：24000
+用槽数：6986
+使用率：29.108334%
+剩槽数：17014
+词典初始化完毕，耗时：3243 毫秒
+完成加载资源，耗时3772 毫秒
+开始加载资源
+classpath:jar/dic/word_v_1_3/punctuation.txt
+类路径资源：jar/dic/word_v_1_3/punctuation.txt
+类路径资源URL：file:/Users/dasouche/weixue/weixue-storm/weixue-storm-qa/target/classes/jar/dic/word_v_1_3/punctuation.txt
+加载资源：/Users/dasouche/weixue/weixue-storm/weixue-storm-qa/target/classes/jar/dic/word_v_1_3/punctuation.txt
+加载资源 48 行
+初始化标点符号
+标点符号初始化完毕，标点符号个数：52
+完成加载资源，耗时1 毫秒
+开始加载资源
+classpath:jar/dic/word_v_1_3/quantifier.txt
+类路径资源：jar/dic/word_v_1_3/quantifier.txt
+类路径资源URL：file:/Users/dasouche/weixue/weixue-storm/weixue-storm-qa/target/classes/jar/dic/word_v_1_3/quantifier.txt
+加载资源：/Users/dasouche/weixue/weixue-storm/weixue-storm-qa/target/classes/jar/dic/word_v_1_3/quantifier.txt
+监控文件：/Users/dasouche/weixue/weixue-storm/weixue-storm-qa/target/classes/jar/dic/word_v_1_3/quantifier.txt
+注意：未启用自动检测功能！如需启用，请在word.local.conf文件中指定配置项auto.detect=true
+加载资源 164 行
+初始化数量词
+数量词初始化完毕，数量词个数：164
+完成加载资源，耗时1 毫秒
+开始加载资源
+classpath:jar/dic/word_v_1_3/bigram.txt
+类路径资源：jar/dic/word_v_1_3/bigram.txt
+加载资源 0 行
+初始化bigram
+bigram初始化完毕，bigram数据条数：0
+完成加载资源，耗时1 毫秒
+开始加载资源
+classpath:jar/dic/word_v_1_3/part_of_speech_dic.txt,classpath:jar/dic/word_v_1_3/part_of_speech_dic_custom_noun_refinement.txt
+类路径资源：jar/dic/word_v_1_3/part_of_speech_dic.txt
+类路径资源URL：file:/Users/dasouche/weixue/weixue-storm/weixue-storm-qa/target/classes/jar/dic/word_v_1_3/part_of_speech_dic.txt
+加载资源：/Users/dasouche/weixue/weixue-storm/weixue-storm-qa/target/classes/jar/dic/word_v_1_3/part_of_speech_dic.txt
+类路径资源：jar/dic/word_v_1_3/part_of_speech_dic_custom_noun_refinement.txt
+类路径资源URL：file:/Users/dasouche/weixue/weixue-storm/weixue-storm-qa/target/classes/jar/dic/word_v_1_3/part_of_speech_dic_custom_noun_refinement.txt
+加载资源：/Users/dasouche/weixue/weixue-storm/weixue-storm-qa/target/classes/jar/dic/word_v_1_3/part_of_speech_dic_custom_noun_refinement.txt
+加载资源 429980 行
+初始化词性标注器
+错误的词性数据：::
+词性标注器初始化完毕，词性数据条数：429979
+完成加载资源，耗时352 毫秒
+开始加载资源
+classpath:jar/dic/word_v_1_3/part_of_speech_des.txt
+类路径资源：jar/dic/word_v_1_3/part_of_speech_des.txt
+类路径资源URL：file:/Users/dasouche/weixue/weixue-storm/weixue-storm-qa/target/classes/jar/dic/word_v_1_3/part_of_speech_des.txt
+加载资源：/Users/dasouche/weixue/weixue-storm/weixue-storm-qa/target/classes/jar/dic/word_v_1_3/part_of_speech_des.txt
+监控文件：/Users/dasouche/weixue/weixue-storm/weixue-storm-qa/target/classes/jar/dic/word_v_1_3/part_of_speech_des.txt
+注意：未启用自动检测功能！如需启用，请在word.local.conf文件中指定配置项auto.detect=true
+加载资源 38 行
+初始化自定义词性说明
+自定义词性说明初始化完毕，数据条数：38
+完成加载资源，耗时2 毫秒

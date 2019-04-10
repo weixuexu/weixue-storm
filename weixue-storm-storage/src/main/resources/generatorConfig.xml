@@ -1,0 +1,58 @@
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+	<classPathEntry
+		location="/Users/dasouche/.m2/repository/mysql/mysql-connector-java/5.1.27/mysql-connector-java-5.1.27.jar" />
+
+	<context id="DB2Tables" targetRuntime="MyBatis3">
+		<commentGenerator>
+			<property name="suppressAllComments" value="true" />
+		</commentGenerator>
+
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
+			connectionURL="jdbc:mysql://127.0.0.1:3306/questionanswer"
+			userId="root" password="root">
+		</jdbcConnection>
+
+		<javaTypeResolver>
+			<property name="forceBigDecimals" value="false" />
+		</javaTypeResolver>
+
+		<javaModelGenerator targetPackage="com.weixue.storm.storage.mysql.model"
+			targetProject="../java">
+			<property name="enableSubPackages" value="true" />
+			<property name="trimStrings" value="true" />
+		</javaModelGenerator>
+
+		<sqlMapGenerator targetPackage="." targetProject="./sqlmap">
+			<property name="enableSubPackages" value="true" />
+		</sqlMapGenerator>
+
+		<javaClientGenerator type="XMLMAPPER"
+			targetPackage="com.weixue.storm.storage.mysql.dao" targetProject="../java">
+			<property name="enableSubPackages" value="true" />
+		</javaClientGenerator>
+
+		<table tableName="question"
+			   domainObjectName="Question" enableCountByExample="true"
+			   enableUpdateByExample="false" enableDeleteByExample="false"
+			   enableSelectByExample="true" selectByExampleQueryId="true">
+			<generatedKey column="id" sqlStatement="Mysql" identity="true" />
+		</table>
+
+		<table tableName="question_operate"
+			   domainObjectName="QuestionOperate" enableCountByExample="true"
+			   enableUpdateByExample="false" enableDeleteByExample="false"
+			   enableSelectByExample="true" selectByExampleQueryId="true">
+			<generatedKey column="id" sqlStatement="Mysql" identity="true" />
+		</table>
+
+		<table tableName="question_pic"
+			   domainObjectName="QuestionPic" enableCountByExample="true"
+			   enableUpdateByExample="false" enableDeleteByExample="false"
+			   enableSelectByExample="true" selectByExampleQueryId="true">
+			<generatedKey column="id" sqlStatement="Mysql" identity="true" />
+		</table>
+	</context>
+</generatorConfiguration>

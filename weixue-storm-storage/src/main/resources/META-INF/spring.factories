@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.weixue.storm.storage.mysql.MybatisAutoConfiguration
